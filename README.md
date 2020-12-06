@@ -3,7 +3,7 @@
 
 Get Product Offer:
 
-curl -X GET   'http://localhost:3000/offers/amazon'   -H 'accept: application/json'   -H 'auth-key: sdfsdf' 
+curl -X GET   'http://3.6.188.252:3000/offers/amazon'   -H 'accept: application/json'   -H 'auth-key: sdfsdf' 
 
 Response:
 {
@@ -31,14 +31,14 @@ Response:
 
 Wrong path parameter:
 
-curl -X GET   'http://localhost:3000/offers/amazon1'   -H 'accept: application/json'   -H 'auth-key: sdfsdf' 
+curl -X GET   'http://3.6.188.252:3000/offers/amazon1'   -H 'accept: application/json'   -H 'auth-key: sdfsdf' 
 
 {"message":"Bad Request – Query param not passed properly"}
 
 
 Invalid auth key:
 
-curl -X GET   'http://localhost:3000/offers/amazon'   -H 'accept: application/json'   -H 'auth-key: sdfsdf1' 
+curl -X GET   'http://3.6.188.252:3000/offers/amazon'   -H 'accept: application/json'   -H 'auth-key: sdfsdf1' 
 
 {"message":"Invalid auth key"}
 
@@ -47,13 +47,13 @@ curl -X GET   'http://localhost:3000/offers/amazon'   -H 'accept: application/js
 Get Product Price:
 
 
-curl -X GET   'http://localhost:3000/product/snapdeal?productName=iphone%2012%20pro%20max'   -H 'accept: application/json'   -H 'auth-key: sdfsdf' 
+curl -X GET   'http://3.6.188.252:3000/product/snapdeal?productName=iphone%2012%20pro%20max'   -H 'accept: application/json'   -H 'auth-key: sdfsdf' 
 
 {"price":"Rs 90,000"}
 
 Wrong path parameter:
 
-curl -X GET   'http://localhost:3000/product/snapdeal1?productName=iphone%2012%20pro%20max'   -H 'accept: application/json'   -H 'auth-key: sdfsdf' 
+curl -X GET   'http://3.6.188.252:3000/product/snapdeal1?productName=iphone%2012%20pro%20max'   -H 'accept: application/json'   -H 'auth-key: sdfsdf' 
 
 
 {"message":"Bad Request – Query param not passed properly"}
@@ -62,7 +62,7 @@ curl -X GET   'http://localhost:3000/product/snapdeal1?productName=iphone%2012%2
 
 Get Product Details:
 
-curl -X GET   'http://localhost:3000/product/details?productName=iphone%2012%20pro%20max'   -H 'accept: application/json'   -H 'auth-key: sdfsdf' 
+curl -X GET   'http://3.6.188.252:3000/product/details?productName=iphone%2012%20pro%20max'   -H 'accept: application/json'   -H 'auth-key: sdfsdf' 
 
 
 {
@@ -78,7 +78,7 @@ curl -X GET   'http://localhost:3000/product/details?productName=iphone%2012%20p
 
 Wrong Query  parameter:
 
-curl -X GET   'http://localhost:3000/product/details?productName=iphone%2012%20pro%20max1'   -H 'accept: application/json'   -H 'auth-key: sdfsdf' 
+curl -X GET   'http://3.6.188.252:3000/product/details?productName=iphone%2012%20pro%20max1'   -H 'accept: application/json'   -H 'auth-key: sdfsdf' 
 
 
 {"message":"Bad Request – Query param not passed properly!"}
