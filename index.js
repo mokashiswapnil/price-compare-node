@@ -1,7 +1,6 @@
 var express = require('express');
 var app = express();
 
-var things = require('./things.js');
 var product= require('./product.js');
 var offers= require('./offers.js');
 
@@ -32,7 +31,6 @@ app.use(function(req, res, next){
     
  });
 
-app.use('/things', things);
 app.use('/product', product);
 
 app.use('/offers', offers);
